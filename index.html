@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css">
+        <title>Basketball Scoreboard</title>
+    </head>
+    <body>
+
+        <!-- Container that contains info about teams -->
+        <div class="container">
+            <h1>BASKETBALL SCOREBOARD</h1>
+            <div class="container-teams">
+
+                <!-- Info about home team -->
+                <div class="home">
+                    <span id="home-name">HOME</span>
+                    <div class="home-score">
+                        <span id="home-points">0</span>
+                    </div>   
+                    <div class="home-add">
+                        <button onclick="addPoints('home', 1)">+1</button>
+                        <button onclick="addPoints('home', 2)">+2</button>
+                        <button onclick="addPoints('home', 3)">+3</button>
+                    </div>
+                </div>
+
+                <!-- Info about guest team -->
+                <div class="guest">
+                    <span id="guest-name">GUEST</span>
+                    <div class="guest-score">
+                        <span id="guest-points">0</span>
+                    </div>
+                    <div class="guest-add">
+                        <button onclick="addPoints('guest', 1)">+1</button>
+                        <button onclick="addPoints('guest', 2)">+2</button>
+                        <button onclick="addPoints('guest', 3)">+3</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Points return to zero -->
+            <div class="info-extra">
+                <button onclick="resetPoints()">NEW GAME</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

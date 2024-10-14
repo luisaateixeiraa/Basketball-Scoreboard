@@ -1,0 +1,92 @@
+body {
+    margin: 0 auto;
+    background-color: #EEEEEE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    margin: 60px auto;
+    max-width: 80%;
+    width: 800px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: #1B244A;
+    border: 10px solid white;
+    border-radius: 20px;
+    color: white;
+}
+
+.container-teams{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home, .guest {
+    padding: 10px;
+}
+
+#home-name, #guest-name {
+    color: #047857;
+    font-size: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* points scored */
+.home-score, .guest-score {
+    padding-top: 20px;
+    background-color: black;  
+    border-radius: 10px;
+}
+
+#home-points, #guest-points {
+    background-color: black;  
+    border-radius: 10px;
+    font-size: 100px;
+    font-family: scoreFont;
+    color: red;
+}
+
+/* buttons add points style */
+.home-add, .guest-add {
+    padding-top: 20px;
+    button {
+        margin: 5px;
+        padding: 10px;
+        color: #9AABD8;
+        background-color: #1B244A;
+        border: 1px solid #9AABD8;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        color: #1B244A;
+        background-color: #9AABD8;
+        cursor:pointer;
+    }
+}
+
+/* new game button style*/
+.info-extra {
+    margin-bottom: 20px;
+    button {
+        padding: 10px;
+        color: #9AABD8;
+        font-weight: bold;
+        background-color: #064E3B;
+        border: 1px solid #9AABD8;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        color: #064E3B;
+        background-color: #9AABD8;
+        cursor:pointer;
+    }
+}
+
+@font-face {
+    font-family: scoreFont;
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
