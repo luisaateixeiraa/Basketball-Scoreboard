@@ -1,14 +1,17 @@
 let homePoints = 0
 let guestPoints = 0
 
-let homePointsElement = document.getElementById("home-points")
-let guestPointsElement = document.getElementById("guest-points")
+// Use `const` is best practice if variables aren't likely change after 
+const homePointsElement = document.getElementById("home-points") 
+const guestPointsElement = document.getElementById("guest-points")
 
 function addPoints(team, points) {
     if (team === "home") {
         homePoints += points;
         homePointsElement.textContent = homePoints;
-    } else if (team === "guest") {
+    } 
+    // There is only two team, so if team isn't home, the other is guest. Simplifying with `else` makes your code lighter.
+    else /* if (team === "guest") */ {
         guestPoints += points;
         guestPointsElement.textContent = guestPoints;
     }
